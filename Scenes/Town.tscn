@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://ttkiouqcohyi"]
+
+[ext_resource type="Texture2D" uid="uid://bl1sewmhry4cm" path="res://Sprites/DefaultTile.png" id="1_g2plp"]
+[ext_resource type="Script" path="res://Scripts/CameraControl.gd" id="1_kudra"]
+[ext_resource type="Texture2D" uid="uid://uwwb1i37pgkf" path="res://Sprites/Single_Hovering.png" id="2_eqk5u"]
+[ext_resource type="Script" path="res://Scripts/Selector.gd" id="3_yhfrr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8bvj4"]
+texture = ExtResource("1_g2plp")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f38xa"]
+texture = ExtResource("2_eqk5u")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_hgc6j"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_8bvj4")
+sources/1 = SubResource("TileSetAtlasSource_f38xa")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_kudra")
+bottom_boundary = 0
+left_boundary = 0
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_hgc6j")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -131072, 0, 0, -196608, 0, 0, -1, 0, 0, 65535, 0, 0, 0, 0, 0, -262144, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 65534, 0, 0, 65533, 0, 0, 65532, 0, 0, 131068, 0, 0, 196605, 0, 0, 196604, 0, 0, 262140, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 131071, 0, 0, 196607, 0, 0, 131070, 0, 0, 196606, 0, 0, 131069, 0, 0, 131073, 0, 0, 65537, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 131075, 0, 0, 65539, 0, 0, 65538, 0, 0, 131074, 0, 0, -65533, 0, 0, -131069, 0, 0, -196605, 0, 0, -262141, 0, 0, -262142, 0, 0, -262143, 0, 0, -196607, 0, 0, -131071, 0, 0, -65535, 0, 0, -131070, 0, 0, -65534, 0, 0, -196606, 0, 0, -131073, 0, 0, -196609, 0, 0, -196610, 0, 0, -196611, 0, 0, -196612, 0, 0, -131076, 0, 0, -65540, 0, 0, -4, 0, 0, -3, 0, 0, -65539, 0, 0, -131075, 0, 0, -2, 0, 0, -65538, 0, 0, -131074, 0, 0, -65537, 0, 0)
+layer_1/tile_data = PackedInt32Array()
+script = ExtResource("3_yhfrr")
