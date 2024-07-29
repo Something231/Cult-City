@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://ttkiouqcohyi"]
+[gd_scene load_steps=12 format=3 uid="uid://ttkiouqcohyi"]
 
 [ext_resource type="Texture2D" uid="uid://bl1sewmhry4cm" path="res://Sprites/DefaultTile.png" id="1_g2plp"]
 [ext_resource type="Script" path="res://Scripts/CameraControl.gd" id="1_kudra"]
+[ext_resource type="Script" path="res://Scripts/dictator.gd" id="1_rb5k1"]
 [ext_resource type="Texture2D" uid="uid://uwwb1i37pgkf" path="res://Sprites/Single_Hovering.png" id="2_eqk5u"]
+[ext_resource type="PackedScene" uid="uid://c4v2ouk4n1vij" path="res://Scenes/HUD.tscn" id="2_gvu6p"]
 [ext_resource type="Script" path="res://Scripts/Selector.gd" id="3_yhfrr"]
 [ext_resource type="Texture2D" uid="uid://cqgjf3roagqbi" path="res://Sprites/Bricks_Right.png" id="4_wx02n"]
 
@@ -34,16 +36,23 @@ sources/0 = SubResource("TileSetAtlasSource_8bvj4")
 sources/1 = SubResource("TileSetAtlasSource_f38xa")
 sources/2 = SubResource("TileSetAtlasSource_hjgbp")
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" groups=["Dictator"]]
+script = ExtResource("1_rb5k1")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_hgc6j")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65546, 0, 0, -65545, 0, 0, -9, 0, 0, 65528, 0, 0, 131065, 0, 0, 131066, 0, 0, 196602, 0, 0, 196603, 0, 0, 262139, 0, 0, 262140, 0, 0, 327677, 0, 0, 327678, 0, 0, 393215, 0, 0, 327680, 0, 0, 393216, 0, 0, -262145, 0, 0, -327680, 0, 0, -262143, 0, 0, -196606, 0, 0, -196605, 0, 0, -131068, 0, 0, -131067, 0, 0, -131066, 0, 0, -65529, 0, 0, 7, 0, 0, 65544, 0, 0, 131081, 0, 0, 131082, 0, 0, 196619, 0, 0, 262155, 0, 0, 262156, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 327690, 0, 0, -196616, 0, 0, -196615, 0, 0, -196614, 0, 0, -196613, 0, 0, -196612, 0, 0, -131075, 0, 0, -131074, 0, 0, -131073, 0, 0, -131072, 0, 0)
+layer_1/tile_data = PackedInt32Array()
+script = ExtResource("3_yhfrr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("1_kudra")
 bottom_boundary = 0
 left_boundary = 0
 
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_hgc6j")
-format = 2
-layer_0/tile_data = PackedInt32Array(-65536, 0, 0, -131072, 0, 0, -196608, 0, 0, -1, 0, 0, 65535, 0, 0, 0, 0, 0, -262144, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 65534, 0, 0, 65533, 0, 0, 65532, 0, 0, 131068, 0, 0, 196605, 0, 0, 196604, 0, 0, 262140, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 131071, 0, 0, 196607, 0, 0, 131070, 0, 0, 196606, 0, 0, 131069, 0, 0, 131073, 0, 0, 65537, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 131075, 0, 0, 65539, 0, 0, 65538, 0, 0, 131074, 0, 0, -65533, 0, 0, -131069, 0, 0, -196605, 0, 0, -262141, 0, 0, -262142, 0, 0, -262143, 0, 0, -196607, 0, 0, -131071, 0, 0, -65535, 0, 0, -131070, 0, 0, -65534, 0, 0, -196606, 0, 0, -131073, 0, 0, -196609, 0, 0, -196610, 0, 0, -196611, 0, 0, -196612, 0, 0, -131076, 0, 0, -65540, 0, 0, -4, 0, 0, -3, 0, 0, -65539, 0, 0, -131075, 0, 0, -2, 0, 0, -65538, 0, 0, -131074, 0, 0, -65537, 0, 0, 589815, 2, 0, 524279, 2, 0, 524278, 2, 0, 458742, 2, 0, 393206, 2, 0, 393205, 2, 0, 458741, 2, 0, 524277, 2, 0, 589814, 2, 0, 458743, 2, 0, 327671, 2, 0, 393207, 2, 0, 262135, 2, 0, 196599, 2, 0, 131063, 2, 0, 196598, 2, 0, 131062, 2, 0, 196597, 2, 0, 131061, 2, 0, 393204, 2, 0, 327668, 2, 0, 262132, 2, 0, 196596, 2, 0, 131060, 2, 0, 131059, 2, 0, 196595, 2, 0, 393202, 2, 0, 458738, 2, 0, 458739, 2, 0, 393203, 2, 0, 196594, 2, 0, 131058, 2, 0, 589813, 2, 0, 458740, 2, 0, 589809, 2, 0, 524273, 2, 0, 458737, 2, 0, 393201, 2, 0, 327665, 2, 0, 262129, 2, 0, 196593, 2, 0, 131057, 2, 0, 65522, 2, 0, 65523, 2, 0, -13, 2, 0, -12, 2, 0, -11, 2, 0, -65548, 2, 0, 65526, 2, 0, 65525, 2, 0, 65524, 2, 0, 196600, 2, 0, 196592, 2, 0, 524276, 2, 0, 589812, 2, 0, 589811, 2, 0, 524275, 2, 0)
-layer_1/tile_data = PackedInt32Array()
-script = ExtResource("3_yhfrr")
+[node name="Control" parent="Camera2D" instance=ExtResource("2_gvu6p")]
+offset_left = -577.0
+offset_top = -324.0
+offset_right = -577.0
+offset_bottom = -324.0

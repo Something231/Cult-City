@@ -6,7 +6,7 @@ extends Camera2D
 @export var left_boundary: int = -9999
 @export var right_boundary: int = 9999
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_pressed("move_up") and position.y >= top_boundary:
 		position.y -= movement_amount
 	elif Input.is_action_pressed("move_down") and position.y <= bottom_boundary:
