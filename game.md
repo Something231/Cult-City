@@ -1,8 +1,8 @@
-Cult City - 2d City Simulator
-GamePoint:
-    = You work as the leader of a cult called the council. You have been tasked in constructing a perfectly funcional town/city, so that the council     has a sufficient amount of people in such city, that some citizens can be "redacted" and sacrificed to your worthy cause. Of course this doesn't     mean you can be bad at your city construction, as you want to encourage population and economic growth as much as possible so that your city booms.
+# Cult City - 2d City Simulator
+## GamePoint:
+    - You work as the leader of a cult called the council. You have been tasked in constructing a perfectly funcional town/city, so that the council     has a sufficient amount of people in such city, that some citizens can be "redacted" and sacrificed to your worthy cause. Of course this doesn't     mean you can be bad at your city construction, as you want to encourage population and economic growth as much as possible so that your city booms.
 
-- Positive income
+## Positive income
     - Money is earnt through cashflow:
         - The main source of cashflow will be taxes.
         - Fees for public transport, and tolls will also add to cashflow
@@ -10,20 +10,20 @@ GamePoint:
     - Some events can add directly to cashflow:
         - A new resident entering the city
 
-- Negative income
+## Negative income
     - Preventable deaths? 
     - Government run operations: i.e. Education, Hospitals
     - Vandalism
     - Building things
     - Imports
 
-- Utilities
+## Utilities
     - Power
     - Water
     - Internet cabling
     - Building self sufficiency is possible too.
 
-- City Growth
+## City Growth
     - The council may construct and control buildings they create
         - The council rents out these unzoned buildings
         - The council may sell unzoned buildings.
@@ -38,7 +38,7 @@ GamePoint:
     - Reproduction will only happen in homes that can sustain a family
     - Homelessness can occur if housing is too expensive or if buildings are demolished.
 
-- Supression
+## Supression
     - The populus may plot assasination of the council
         - This must be stopped
     - The populus must be convinced into supporting the council
@@ -51,7 +51,7 @@ GamePoint:
         - Or you could improve working conditions...
     - Unfavourable members of the public can be sacrificed, or if they are too powerful, they can be assasinated.
 
-- The council
+## The council
     - You work as the city planner as hired by the council
     - The council is a cult (secret)
     - Dissent must not be allowed
@@ -67,7 +67,7 @@ GamePoint:
     - The council can provide agendas that are optional, or compulsory
     - The council loans the player with a base amount cash, which they expect a return from
 
-- Buildings
+## Buildings
     - Buildings must be built on foundations.
     - The basic structure of a building must be designed before it is built
     - You cannot build onto existing buildings.
@@ -86,8 +86,17 @@ GamePoint:
         - Cult owned
         - ...
 
-- City Planners
+## City Planners
     - You get to choose what type of city planner you are when setting up the game
     - Each mayor gives certain negative and positive bonuses
 
+## Tasks
+    - Workmen, Citizens, Other government officials and sometimes Councillors can be assigned tasks.
+    - Tasks will make it easier to organise building and running of the city
 
+## Agendas
+    - The council will grant you agendas sometimes
+    - You can get Agendas in other times too.
+
+## Easter Eggs
+    - If you type in "E" in the dev console you get the hidden achievement: "Rascam, you aren't funny."
