@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ttkiouqcohyi"]
+[gd_scene load_steps=29 format=3 uid="uid://ttkiouqcohyi"]
 
 [ext_resource type="Texture2D" uid="uid://bl1sewmhry4cm" path="res://Sprites/DefaultTile.png" id="1_g2plp"]
 [ext_resource type="Script" path="res://Scripts/CameraControl.gd" id="1_kudra"]
@@ -6,7 +6,15 @@
 [ext_resource type="Texture2D" uid="uid://uwwb1i37pgkf" path="res://Sprites/Single_Hovering.png" id="2_eqk5u"]
 [ext_resource type="PackedScene" uid="uid://c4v2ouk4n1vij" path="res://Scenes/HUD.tscn" id="2_gvu6p"]
 [ext_resource type="Script" path="res://Scripts/Selector.gd" id="3_yhfrr"]
+[ext_resource type="Texture2D" uid="uid://c0nfugsy1cowb" path="res://Sprites/top_right_select.png" id="4_jbeip"]
 [ext_resource type="Texture2D" uid="uid://cqgjf3roagqbi" path="res://Sprites/Bricks_Right.png" id="4_wx02n"]
+[ext_resource type="Texture2D" uid="uid://by0ox5oax3l5y" path="res://Sprites/top_select.png" id="5_0b0wr"]
+[ext_resource type="Texture2D" uid="uid://dal0y3sjx5xcv" path="res://Sprites/bottom_left_select.png" id="7_tquwh"]
+[ext_resource type="Texture2D" uid="uid://dq1m64j8rsbod" path="res://Sprites/bottom_right_select.png" id="8_1n2ag"]
+[ext_resource type="Texture2D" uid="uid://2p0qsuetik2y" path="res://Sprites/bottom_select.png" id="9_efard"]
+[ext_resource type="Texture2D" uid="uid://e23ion87irrm" path="res://Sprites/left_select.png" id="10_n5k6n"]
+[ext_resource type="Texture2D" uid="uid://m181jtxk7qnt" path="res://Sprites/right_select.png" id="11_qy6iq"]
+[ext_resource type="Texture2D" uid="uid://bu6cvxypj3uv5" path="res://Sprites/top_left_select.png" id="12_k14ns"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8bvj4"]
 texture = ExtResource("1_g2plp")
@@ -22,8 +30,71 @@ texture_region_size = Vector2i(32, 32)
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5vckt"]
+texture = ExtResource("4_jbeip")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nyn3p"]
+texture = ExtResource("5_0b0wr")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjgbp"]
 texture = ExtResource("4_wx02n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hm2hm"]
+texture = ExtResource("7_tquwh")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ubu1"]
+texture = ExtResource("8_1n2ag")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3gwf8"]
+texture = ExtResource("9_efard")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_af3c6"]
+texture = ExtResource("10_n5k6n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bx38f"]
+texture = ExtResource("11_qy6iq")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7wudc"]
+texture = ExtResource("2_eqk5u")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mnuqt"]
+texture = ExtResource("12_k14ns")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -35,11 +106,20 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_8bvj4")
 sources/1 = SubResource("TileSetAtlasSource_f38xa")
 sources/2 = SubResource("TileSetAtlasSource_hjgbp")
+sources/3 = SubResource("TileSetAtlasSource_hm2hm")
+sources/4 = SubResource("TileSetAtlasSource_6ubu1")
+sources/5 = SubResource("TileSetAtlasSource_3gwf8")
+sources/6 = SubResource("TileSetAtlasSource_af3c6")
+sources/7 = SubResource("TileSetAtlasSource_bx38f")
+sources/8 = SubResource("TileSetAtlasSource_7wudc")
+sources/9 = SubResource("TileSetAtlasSource_mnuqt")
+sources/10 = SubResource("TileSetAtlasSource_5vckt")
+sources/11 = SubResource("TileSetAtlasSource_nyn3p")
 
 [node name="Node2D" type="Node2D" groups=["Dictator"]]
 script = ExtResource("1_rb5k1")
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="." groups=["tilemap"]]
 tile_set = SubResource("TileSet_hgc6j")
 format = 2
 layer_0/tile_data = PackedInt32Array(-65546, 0, 0, -65545, 0, 0, -9, 0, 0, 65528, 0, 0, 131065, 0, 0, 131066, 0, 0, 196602, 0, 0, 196603, 0, 0, 262139, 0, 0, 262140, 0, 0, 327677, 0, 0, 327678, 0, 0, 393215, 0, 0, 327680, 0, 0, 393216, 0, 0, -262145, 0, 0, -327680, 0, 0, -262143, 0, 0, -196606, 0, 0, -196605, 0, 0, -131068, 0, 0, -131067, 0, 0, -131066, 0, 0, -65529, 0, 0, 7, 0, 0, 65544, 0, 0, 131081, 0, 0, 131082, 0, 0, 196619, 0, 0, 262155, 0, 0, 262156, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 327690, 0, 0, -196616, 0, 0, -196615, 0, 0, -196614, 0, 0, -196613, 0, 0, -196612, 0, 0, -131075, 0, 0, -131074, 0, 0, -131073, 0, 0, -131072, 0, 0)

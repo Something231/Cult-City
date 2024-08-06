@@ -1,11 +1,17 @@
 extends TileMap
 
-var last_selected = Vector2i(0, 0)
-var selection_state: int = 0
+var last_selected: Array = [Vector2i(0, 0)]
 
-func _process(_delta):
-	if selection_state == 0:
-		var selected_tile = local_to_map(get_global_mouse_position())
-		erase_cell(1, last_selected)
-		set_cell(1, selected_tile, 1, Vector2i(0, 0), 0)
-		last_selected = selected_tile
+func select_tiles(tile_selection: Array[Vector2i]):
+	for tile in last_selected:
+		erase_cell(1, tile)
+	
+	if tile_selection.size() == 1:
+		for tile in tile_selection:
+			set_cell(1, tile, 1, Vector2i(0, 0), 0)
+			
+	else:
+		var max_x = null
+		var min_x = null
+		var max_y = null
+		var min_y = null
