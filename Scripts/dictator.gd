@@ -3,6 +3,8 @@ extends Node2D
 var building: bool = false
 var buildmaterial = "_"
 var buildstate: int = 0
+var last_selected = Vector2(0, 0)
+var selection_state: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,12 +13,15 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if selection_state == 0:
+		var selected_tile = get_global_mouse_position()
+		if selected_tile != last_selected:
+			last_selected = selected_tile
+			get_tree().call_group("tilemap", "select_tiles", selected_tile)
 
 func build_state(button):
 	building = not building
 	buildmaterial = button
-var last_selected = Vector2i(0, 0)
-var selection_state: int = 0
+
 
 
