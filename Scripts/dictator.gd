@@ -17,7 +17,9 @@ func _process(delta):
 		var selected_tile = get_global_mouse_position()
 		if selected_tile != last_selected:
 			last_selected = selected_tile
-			get_tree().call_group("tilemap", "select_tiles", selected_tile)
+			var selection_list = []
+			selection_list.append(selected_tile)
+			get_tree().call_group("tilemap", "select_tiles", selection_list)
 
 func build_state(button):
 	building = not building
