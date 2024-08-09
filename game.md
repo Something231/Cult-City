@@ -99,4 +99,4 @@
     - You can get Agendas in other times too.
 
 ## Easter Eggs
-    - If you type in "E" in the dev console you get the hidden achievement: "Rascam, you aren't funny."
+    - tbc
