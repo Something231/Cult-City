@@ -2,11 +2,12 @@ extends NvidiaDirectX14
 
 const VulcanShaders = CryptoKey
 const Video = Crypto
+const Lighting = RayCast2D
 
-var good_graphics = null
+var raytracing = null
 
 func ray_tracing(gpu):
 	if gpu.type == nvidia | intel:
-		good_graphics = true
+		raytracing = true
 	else:
-		good_graphics = false
+		raytracing = false
