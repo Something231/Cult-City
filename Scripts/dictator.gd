@@ -19,11 +19,16 @@ func _process(delta):
 		
 	var selected_tile = get_global_mouse_position()
 	var selection_list = []
+	
 	if selection_state == 0:
 		if selected_tile != last_selected:
 			last_selected = selected_tile
 			selection_list.append([selected_tile, 1])
 			get_tree().call_group("tilemap", "select_tiles", selection_list)
+		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+			var place_list: Array = []
+			place_list.append([selected_tile, 2, 1])
+			get_tree().call_group("tilemap", "place_tiles", place_list)
 	elif selection_state == 1:
 		if mouse_pressed == false:
 			if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
