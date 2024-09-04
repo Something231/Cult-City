@@ -1,9 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4v2ouk4n1vij"]
+[gd_scene load_steps=2 format=3 uid="uid://c4v2ouk4n1vij"]
 
 [ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_uj1a7"]
-[ext_resource type="Texture2D" uid="uid://beg3kked3gc5l" path="res://Sprites/buildtemp.png" id="1_uvfcr"]
 
-[node name="Control" type="Control"]
+[node name="UI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,12 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uj1a7")
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="MenuBar" type="MenuBar" parent="."]
 layout_mode = 0
-offset_left = 67.0
-offset_top = 556.0
-offset_right = 103.0
-offset_bottom = 592.0
-texture_normal = ExtResource("1_uvfcr")
-
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+offset_right = 1152.0
+offset_bottom = 648.0
