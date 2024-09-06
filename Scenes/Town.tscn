@@ -1,10 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://ttkiouqcohyi"]
+[gd_scene load_steps=28 format=3 uid="uid://ttkiouqcohyi"]
 
 [ext_resource type="Texture2D" uid="uid://bl1sewmhry4cm" path="res://Sprites/DefaultTile.png" id="1_g2plp"]
 [ext_resource type="Script" path="res://Scripts/CameraControl.gd" id="1_kudra"]
 [ext_resource type="Script" path="res://Scripts/dictator.gd" id="1_rb5k1"]
 [ext_resource type="Texture2D" uid="uid://uwwb1i37pgkf" path="res://Sprites/Single_Hovering.png" id="2_eqk5u"]
-[ext_resource type="PackedScene" uid="uid://c4v2ouk4n1vij" path="res://Scenes/HUD.tscn" id="2_gvu6p"]
 [ext_resource type="Script" path="res://Scripts/Selector.gd" id="3_yhfrr"]
 [ext_resource type="Texture2D" uid="uid://c0nfugsy1cowb" path="res://Sprites/top_right_select.png" id="4_jbeip"]
 [ext_resource type="Texture2D" uid="uid://cqgjf3roagqbi" path="res://Sprites/Bricks_Right.png" id="4_wx02n"]
@@ -131,10 +130,3 @@ script = ExtResource("3_yhfrr")
 script = ExtResource("1_kudra")
 bottom_boundary = 0
 left_boundary = 0
-
-[node name="Control" parent="Camera2D" instance=ExtResource("2_gvu6p")]
-visible = false
-offset_left = -577.0
-offset_top = -324.0
-offset_right = -577.0
-offset_bottom = -324.0
