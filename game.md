@@ -51,22 +51,6 @@
         - Or you could improve working conditions...
     - Unfavourable members of the public can be sacrificed, or if they are too powerful, they can be assasinated.
 
-## The council
-    - You work as the city planner as hired by the council
-    - The council is a cult (secret)
-    - Dissent must not be allowed
-    - Council members must be protected
-    - If a significant amount of the council is killed, you are sacrificed
-    - If the town goes bankrupt, you are sacrificed
-    - If for any reason, the council loses enough trust in you, you are sacrified
-    - If the council is unhappy enough, you are sacrificed.
-    - If the quota of sacrifices is not met, you are sacrificed.
-    - If you appease the council, you will not be sacrified.
-    - Members of the council can be *swayed*
-    - Unfavourable members of the council can be... removed.
-    - The council can provide agendas that are optional, or compulsory
-    - The council loans the player with a base amount cash, which they expect a return from
-
 ## Buildings
     - Buildings must be built on foundations.
     - The basic structure of a building must be designed before it is built
@@ -100,3 +84,32 @@
 
 ## Easter Eggs
     - tbc
+
+
+## The council
+    - You work as the city planner as hired by the council
+    - The council is a cult (secret)
+    - Dissent must not be allowed
+    - Council members must be protected
+    - If a significant amount of the council is killed, you are sacrificed
+    - If the town goes bankrupt, you are sacrificed
+    - If for any reason, the council loses enough trust in you, you are sacrified
+    - If the council is unhappy enough, you are sacrificed.
+    - If the quota of sacrifices is not met, you are sacrificed.
+    - If you appease the council, you will not be sacrified.
+    - Members of the council can be *swayed*
+    - Unfavourable members of the council can be... removed.
+    - The council can provide agendas that are optional, or compulsory
+    - The council loans the player with a base amount cash, which they expect a return from
+    - You must help the council to execute supression on the city
+
+## The story
+    - You are first hired by an orginisation known only as the council
+    - Hired to construct a town
+    - Once the town reaches 50 people the council will arrive in town
+    - You will be required to build the council a council building
+    - The council will demand much of you to increase supression over the city
+    - You will slowly be revealed to the true intentions of the council as a cult
+    - After you fully realise what the council is doing, it becomes possible to achieve on of the endings
+    - Possible endings:
+        - 
